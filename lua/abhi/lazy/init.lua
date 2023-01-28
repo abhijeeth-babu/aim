@@ -72,4 +72,6 @@ require("lazy").setup({
   'windwp/nvim-autopairs',
   -- indentation
   'lukas-reineke/indent-blankline.nvim',
+  -- git
+  'lewis6991/gitsigns.nvim',
 })
