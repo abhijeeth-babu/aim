@@ -42,4 +42,5 @@ wk.register({
   ["<leader>b["] = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
   ["<leader>b]"] = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
   ["<leader>bd"] = {"<cmd>BufferLineCyclePrev<cr>", "Delete Buffer"},
+  ["<leader>/"] = { "<Plug>(comment_toggle_linewise_visual)", "Comment toggle linewise (visual)" },
 })
