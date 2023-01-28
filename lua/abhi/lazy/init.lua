@@ -30,6 +30,7 @@ require("lazy").setup({
   { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = true, priority = 1000 },
   {
     "williamboman/mason.nvim",
+    'folke/neodev.nvim',
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
   }, 
@@ -58,4 +59,9 @@ require("lazy").setup({
   'jose-elias-alvarez/null-ls.nvim',
   'jay-babu/mason-null-ls.nvim',
   'goolord/alpha-nvim',
+  -- debugging
+  'mfussenegger/nvim-dap',
+  'rcarriga/nvim-dap-ui',
+  'theHamsta/nvim-dap-virtual-text',
+  'mfussenegger/nvim-dap-python'
 })

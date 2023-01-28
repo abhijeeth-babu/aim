@@ -20,3 +20,15 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.g.python3_host_prog = 'C:\\Python311\\python.exe'
+
+-- powershell and clipboard
+vim.opt.shell = "pwsh.exe -NoLogo"
+vim.opt.shellcmdflag =
+  "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
+vim.cmd [[
+		let &shellredir = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'
+		let &shellpipe = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'
+		set shellquote= shellxquote=
+  ]]
+
+vim.opt.clipboard = 'unnamedplus'

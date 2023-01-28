@@ -10,7 +10,12 @@ wk.register({
     name = "+write",
     w = {"<cmd>w!<cr>", "Write Buffer"},
     q = {"<cmd>wq!<cr>", "Write and quit Buffer"},
-    x = {"<cmd>wqa!<cr>", "Write and quit all Buffers"},
+    a = {"<cmd>wqa!<cr>", "Write and quit all Buffers"},
+  },
+  q = {
+    name = "+quit",
+    q = {"<cmd>q!<cr>", "Quit current tab"},
+    a = {"<cmd>qa!<cr>", "Quit all tabs"},
   },
   t = {
     name = "+Telescope",
@@ -20,6 +25,15 @@ wk.register({
     h = {"<cmd>Telescope help_tags<cr>", "Help Tags"},
     r = {"<cmd>Telescope old_files<cr>", "Open Recent Files"},
     s = {"<cmd>Telescope symbols<cr>", "Symbols"},
+  },
+  d = {
+    name = "+dap",
+    u = {"<cmd>lua require('dapui').toggle()<cr>", "Toggle dap-ui"},
+    b = {"<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle breakpoint"},
+    c = {"<cmd>lua require'dap'.continue()<cr>", "Launch or resume"},
+    i = {"<cmd>lua require'dap'.step_into()<cr>", "Step into"},
+    o = {"<cmd>lua require'dap'.step_over()<cr>", "Step over"},
+    r = {"<cmd>lua require'dap'.repl.open()<cr>", "Open REPL"},
   },
 }, { prefix = "<leader>" })
 

@@ -1,3 +1,8 @@
+require("neodev").setup({
+  -- add any options here, or leave empty to use the default settings
+  library = { plugins = { "nvim-dap-ui" }, types = true },
+})
+
 require("mason").setup()
 
 -- Mason lsp-config setup
@@ -19,6 +24,13 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 require("lspconfig").sumneko_lua.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  settings = {
+    Lua = {
+      completion = {
+        callSnippet = "Replace"
+      }
+    }
+  },
 }
 require("lspconfig").pyright.setup {
   on_attach = on_attach,
