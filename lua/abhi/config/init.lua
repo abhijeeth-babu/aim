@@ -18,3 +18,5 @@ vim.opt.expandtab = true
 vim.opt.ignorecase = true
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+vim.g.python3_host_prog = 'C:\\Python311\\python.exe'

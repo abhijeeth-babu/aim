@@ -10,7 +10,7 @@ wk.register({
     name = "+write",
     w = {"<cmd>w!<cr>", "Write Buffer"},
     q = {"<cmd>wq!<cr>", "Write and quit Buffer"},
-    x = {"<cmd>wqa!<cr>", "Write and quit from all Buffers"},
+    x = {"<cmd>wqa!<cr>", "Write and quit all Buffers"},
   },
   t = {
     name = "+Telescope",
@@ -24,7 +24,8 @@ wk.register({
 }, { prefix = "<leader>" })
 
 wk.register({
-  ["b"] = {name = "Buffer navigation"},
-  ["b["] = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
-  ["b]"] = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
+  ["<leader>b"] = {name = "Buffer navigation"},
+  ["<leader>b["] = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
+  ["<leader>b]"] = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
+  ["<leader>bd"] = {"<cmd>BufferLineCyclePrev<cr>", "Delete Buffer"},
 })
