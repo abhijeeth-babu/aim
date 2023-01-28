@@ -14,9 +14,10 @@ vim.opt.rtp:prepend(lazypath)
 
 -- plugins
 require("lazy").setup({
+  'folke/tokyonight.nvim',
 	'nvim-lualine/lualine.nvim',
   'akinsho/bufferline.nvim',
-	'kyazdani42/nvim-web-devicons',
+	'nvim-tree/nvim-web-devicons',
   "ellisonleao/gruvbox.nvim",
   'nvim-tree/nvim-tree.lua',
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
@@ -63,5 +64,12 @@ require("lazy").setup({
   'mfussenegger/nvim-dap',
   'rcarriga/nvim-dap-ui',
   'theHamsta/nvim-dap-virtual-text',
-  'mfussenegger/nvim-dap-python'
+  'mfussenegger/nvim-dap-python',
+  -- comment
+  'numToStr/Comment.nvim',
+  'JoosepAlviste/nvim-ts-context-commentstring',
+  -- autopairs
+  'windwp/nvim-autopairs',
+  -- indentation
+  'lukas-reineke/indent-blankline.nvim',
 })
