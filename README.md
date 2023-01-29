@@ -10,5 +10,5 @@ Please make sure to have the following installed using [Choco](https://chocolate
 - node-js
 - make
 
-Clone the github repo or download the config files into %AppData%\Local\nvim and start nvim from terminal. 
+Clone the github repo or download the config files into `%AppData%\Local\nvim` and start nvim from terminal. 
 
