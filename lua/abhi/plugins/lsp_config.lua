@@ -4,6 +4,10 @@ require("neodev").setup({
 })
 
 require("mason").setup()
+require("mason-nvim-dap").setup({
+  ensure_installed = { "python" },
+  automatic_setup = true,
+})
 
 -- Mason lsp-config setup
 require("mason-lspconfig").setup({

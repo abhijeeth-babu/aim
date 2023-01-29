@@ -62,6 +62,8 @@ require("lazy").setup({
   'goolord/alpha-nvim',
   -- debugging
   'mfussenegger/nvim-dap',
+  'jayp0521/mason-nvim-dap.nvim',
+  'nvim-telescope/telescope-dap.nvim',
   'rcarriga/nvim-dap-ui',
   'theHamsta/nvim-dap-virtual-text',
   'mfussenegger/nvim-dap-python',

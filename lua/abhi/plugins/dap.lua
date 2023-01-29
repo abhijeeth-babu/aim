@@ -1,9 +1,26 @@
 local dap = require('dap')
+local dapui = require("dapui")
+dapui.setup()
 
-require("dapui").setup()
+-- Telescope integration
+require('telescope').load_extension('dap')
+
+-- Virtual text
 require("nvim-dap-virtual-text").setup()
 
-require('dap-python').setup('~/.virtualenvs/debugpy/Scripts/python.exe')
+-- Python dap
+require('dap-python').setup("~/AppData/Local/nvim-data/mason/packages/debugpy/venv/Scripts/pythonw.exe")
+
+-- Use this for automatic toggling of dapui
+-- dap.listeners.after.event_initialized["dapui_config"] = function()
+--   dapui.open()
+-- end
+-- dap.listeners.before.event_terminated["dapui_config"] = function()
+--   dapui.close()
+-- end
+-- dap.listeners.before.event_exited["dapui_config"] = function()
+--   dapui.close()
+-- end
 
 vim.api.nvim_set_hl(0, "red",   { fg = "#ab1f2a" }) 
 vim.api.nvim_set_hl(0, "green",  { fg = "#9ece6a" }) 
