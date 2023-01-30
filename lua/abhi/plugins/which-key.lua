@@ -20,7 +20,11 @@ wk.register({
   t = {
     name = "+telescope",
     f = {"<cmd>Telescope find_files<cr>", "find file"},
-    g = {"<cmd>Telescope live_grep<cr>", "live grep"},
+    g = {
+      name = "+grep",
+      a = {"<cmd>Telescope live_grep<cr>", "live grep all"},
+      c = {"<cmd>lua require('telescope.builtin').live_grep({search_dirs={vim.fn.expand('%:p')}})<cr>", "live grep current"},
+    },
     b = {"<cmd>Telescope buffers<cr>", "buffers"},
     h = {"<cmd>Telescope help_tags<cr>", "help tags"},
     r = {"<cmd>Telescope old_files<cr>", "open recent files"},
