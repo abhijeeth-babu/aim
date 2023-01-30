@@ -46,7 +46,7 @@ wk.register({
       o = {"<cmd>lua require'dap'.step_out()<cr>", "Step out"},
     },
     r = {"<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle REPL"},
-    e = {"<cmd>lua require'dap'.eval()<cr>", "Evaluate expression"},
+    e = {"<cmd>lua require'dapui'.eval()<cr>", "Evaluate expression"},
   },
 }, { prefix = "<leader>" })
 
