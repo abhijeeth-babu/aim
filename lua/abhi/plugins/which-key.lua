@@ -19,12 +19,12 @@ wk.register({
   },
   t = {
     name = "+telescope",
-    f = {"<cmd>telescope find_files<cr>", "find file"},
-    g = {"<cmd>telescope live_grep<cr>", "live grep"},
-    b = {"<cmd>telescope buffers<cr>", "buffers"},
-    h = {"<cmd>telescope help_tags<cr>", "help tags"},
-    r = {"<cmd>telescope old_files<cr>", "open recent files"},
-    s = {"<cmd>telescope symbols<cr>", "symbols"},
+    f = {"<cmd>Telescope find_files<cr>", "find file"},
+    g = {"<cmd>Telescope live_grep<cr>", "live grep"},
+    b = {"<cmd>Telescope buffers<cr>", "buffers"},
+    h = {"<cmd>Telescope help_tags<cr>", "help tags"},
+    r = {"<cmd>Telescope old_files<cr>", "open recent files"},
+    s = {"<cmd>Telescope symbols<cr>", "symbols"},
     d = {
       name = "+DAP",
       c = {"<cmd>lua require'telescope'.extensions.dap.commands{}<CR>", "Dap Commands"},
