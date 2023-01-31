@@ -80,4 +80,12 @@ require("lazy").setup({
   "ThePrimeagen/refactoring.nvim",
   -- trouble
   "folke/trouble.nvim",
-})
+  -- todo
+  {
+    "folke/todo-comments.nvim",
+  config = function()
+    require("todo-comments").setup {
+    }
+  end,
+  },
+ })
