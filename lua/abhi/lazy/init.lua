@@ -76,4 +76,9 @@ require("lazy").setup({
   'lukas-reineke/indent-blankline.nvim',
   -- git
   'lewis6991/gitsigns.nvim',
+  -- refactoring
+  "ThePrimeagen/refactoring.nvim",
+  -- Todo and trouble
+  "folke/todo-comments.nvim",
+  "folke/trouble.nvim",
 })
