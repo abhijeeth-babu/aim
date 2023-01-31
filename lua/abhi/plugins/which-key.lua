@@ -64,5 +64,5 @@ wk.register({
 	["<leader>b"] = { name = "Buffer navigation" },
 	["<leader>b["] = { "<cmd>BufferLineCyclePrev<cr>", "Prev Buffer" },
 	["<leader>b]"] = { "<cmd>BufferLineCyclePrev<cr>", "Prev Buffer" },
-	["<leader>bd"] = { "<cmd><cr>", "Delete Buffer" },
+	["<leader>bd"] = { "<cmd>bd!<cr>", "Delete Buffer" },
 })

@@ -78,7 +78,6 @@ require("lazy").setup({
   'lewis6991/gitsigns.nvim',
   -- refactoring
   "ThePrimeagen/refactoring.nvim",
-  -- Todo and trouble
-  "folke/todo-comments.nvim",
+  -- trouble
   "folke/trouble.nvim",
 })
