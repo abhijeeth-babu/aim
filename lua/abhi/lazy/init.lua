@@ -88,4 +88,6 @@ require("lazy").setup({
     }
   end,
   },
+  -- terminal
+  "akinsho/toggleterm.nvim",
  })
