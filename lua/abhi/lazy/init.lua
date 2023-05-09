@@ -15,36 +15,32 @@ vim.opt.rtp:prepend(lazypath)
 -- plugins
 require("lazy").setup({
   'folke/tokyonight.nvim',
-	'nvim-lualine/lualine.nvim',
+  'nvim-lualine/lualine.nvim',
   'akinsho/bufferline.nvim',
-	'nvim-tree/nvim-web-devicons',
+  'nvim-tree/nvim-web-devicons',
   "ellisonleao/gruvbox.nvim",
   'nvim-tree/nvim-tree.lua',
-  {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   {
     'nvim-telescope/telescope.nvim',
     version = '0.1.1',
     dependencies = {
-      {'nvim-lua/plenary.nvim'},
+      { 'nvim-lua/plenary.nvim' },
     },
   },
-  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = true, priority = 1000 },
+  {'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
   {
     "williamboman/mason.nvim",
     'folke/neodev.nvim',
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
-  }, 
+  },
   {
     "folke/which-key.nvim",
     config = function()
       vim.o.timeout = true
       vim.o.timeoutlen = 300
     end,
-  },
-  {
-    'nvim-telescope/telescope-fzf-native.nvim',
-    build = 'make',
   },
   'nvim-telescope/telescope-symbols.nvim',
   -- completion
@@ -60,13 +56,6 @@ require("lazy").setup({
   'jose-elias-alvarez/null-ls.nvim',
   'jay-babu/mason-null-ls.nvim',
   'goolord/alpha-nvim',
-  -- debugging
-  'mfussenegger/nvim-dap',
-  'jayp0521/mason-nvim-dap.nvim',
-  'nvim-telescope/telescope-dap.nvim',
-  'rcarriga/nvim-dap-ui',
-  'theHamsta/nvim-dap-virtual-text',
-  'mfussenegger/nvim-dap-python',
   -- comment
   'numToStr/Comment.nvim',
   'JoosepAlviste/nvim-ts-context-commentstring',
@@ -76,18 +65,6 @@ require("lazy").setup({
   'lukas-reineke/indent-blankline.nvim',
   -- git
   'lewis6991/gitsigns.nvim',
-  -- refactoring
-  "ThePrimeagen/refactoring.nvim",
-  -- trouble
-  "folke/trouble.nvim",
-  -- todo
-  {
-    "folke/todo-comments.nvim",
-  config = function()
-    require("todo-comments").setup {
-    }
-  end,
-  },
   -- terminal
   "akinsho/toggleterm.nvim",
- })
+})
