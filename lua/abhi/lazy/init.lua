@@ -76,7 +76,7 @@ require("lazy").setup({
 
 	-- git
 	{
-    "lewis6991/gitsigns.nvim"},
+    "lewis6991/gitsigns.nvim",
     lazy = true,
   },
 
