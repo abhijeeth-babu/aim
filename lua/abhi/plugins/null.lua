@@ -9,6 +9,9 @@ null_ls.setup({
 
     -- formatting
     null_ls.builtins.formatting.stylua,
+    null_ls.builtins.formatting.black,
+
+
   },
 })
 
